@@ -26,8 +26,8 @@ body{margin:0;background:#0f1115;color:#f2f2f2;font-family:system-ui,Arial,sans-
 .u{background:#23324a}
 .a{background:#1b1f2a}
 #b{position:fixed;bottom:0;left:0;right:0;background:#151922;border-top:1px solid #2a2f3a;padding:12px;display:flex;gap:8px}
-#p{flex:1;background:#0f1115;color:white;border:1px solid #3a4050;border-radius:12px;padding:13px;font-size:16px}
-button{background:#3d6cff;color:white;border:0;border-radius:12px;padding:0 18px;font-size:16px}
+#p{flex:1;min-width:0;background:#0f1115;color:white;border:1px solid #3a4050;border-radius:12px;padding:13px;font-size:16px}
+button{background:#3d6cff;color:white;border:0;border-radius:12px;padding:0 18px;font-size:16px;white-space:nowrap}
 button:disabled{opacity:.5}
 </style>
 </head>
