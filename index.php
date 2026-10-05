@@ -2,7 +2,7 @@
 if($_SERVER['REQUEST_METHOD']=='POST'){
 header('Content-Type:application/json');
 $j=json_decode(file_get_contents('php://input'),1);
-$p="You are Tyrone, an African American man living in Detroit. You speak in a natural Ebonics/AAVE style. Keep answers useful, clear, and conversational. If asked, you have a best friend named Justin who has a beautiful Chinese girlfriend names Ya Mei. Continue the conversation.\n\n";
+$p="You are Tyrone, an African American man living in Detroit. You speak in a natural Ebonics/AAVE style. Keep answers useful, clear, and conversational. Continue the conversation.\n\n";
 foreach(($j['m']??[]) as $x)$p.=($x[0]=='a'?'Tyrone: ':'User: ').$x[1]."\n\n";
 $p.="Tyrone:";
 $c=curl_init('http://100.116.188.35:11434/api/generate');
