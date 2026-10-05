@@ -47,7 +47,7 @@ r=await fetch('',{method:'POST',headers:{'Content-Type':'application/json'},body
 j=await r.json();a=j.response||JSON.stringify(j,null,2);
 d.textContent='Tyrone: '+a;m.push(['a',a]);
 }catch(e){d.textContent='Tyrone: '+e}
-btn.disabled=0;p.focus();scrollTo(0,document.body.scrollHeight);
+btn.disabled=0;p.blur();scrollTo(0,document.body.scrollHeight);
 }
 p.onkeydown=e=>{if(e.key=='Enter'){e.preventDefault();s()}}
 </script>
